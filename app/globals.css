@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.tier-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border;
+}
+
+.event-card {
+  @apply bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200;
+}
+
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+}
